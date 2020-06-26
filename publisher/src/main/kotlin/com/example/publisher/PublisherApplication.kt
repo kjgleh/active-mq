@@ -1,11 +1,11 @@
-package com.example.activemq
+package com.example.publisher
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class ActiveMqApplication
+class PublisherApplication
 
 fun main(args: Array<String>) {
-    runApplication<ActiveMqApplication>(*args)
+    runApplication<PublisherApplication>(*args)
 }

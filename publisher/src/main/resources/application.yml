@@ -1,0 +1,7 @@
+server:
+    port: 8081
+spring:
+    activemq:
+        broker-url: vm://embedded?broker.persistent=false,useShutdownHook=false
+        user: admin
+        password: admin
