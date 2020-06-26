@@ -15,6 +15,6 @@ class DefaultPublisher(
         val message = UUID.randomUUID().toString()
         println("@@@@ publish @@@")
         println(message)
-        jmsTemplate.convertAndSend("temp", message)
+        jmsTemplate.convertAndSend("VirtualTopic.temp", message)
     }
 }

@@ -6,4 +6,4 @@ spring:
         user: admin
         password: admin
     jms:
-        pub-sub-domain: true
+        pub-sub-domain: false
