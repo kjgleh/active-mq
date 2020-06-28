@@ -46,5 +46,5 @@ subprojects {
 }
 
 project(":publisher")
-
 project(":subscriber01")
+project(":subscriber02")
