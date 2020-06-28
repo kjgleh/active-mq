@@ -8,6 +8,7 @@ class DefaultPublisher {
 
     @JmsListener(destination = "Consumer.subscriber02.VirtualTopic.temp")
     fun publish(message: String) {
+        throw Exception()
         println("@@@@ subscriber02 @@@@")
         println(message)
     }
