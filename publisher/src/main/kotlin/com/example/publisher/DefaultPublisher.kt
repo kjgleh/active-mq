@@ -17,4 +17,20 @@ class DefaultPublisher(
         println(message)
         jmsTemplate.convertAndSend("VirtualTopic.temp", message)
     }
+
+    @GetMapping("/publish/apply")
+    fun publishApply() {
+        val message = ReservationApplied()
+        println("@@@@ publish reservation applied @@@")
+        println(message)
+        jmsTemplate.convertAndSend("VirtualTopic.Event", message)
+    }
+
+    @GetMapping("/publish/confirm")
+    fun publishConfirm() {
+        val message = ReservationConfirmed(manager = "tester")
+        println("@@@@ publish reservation confirmed @@@")
+        println(message)
+        jmsTemplate.convertAndSend("VirtualTopic.Event", message)
+    }
 }
